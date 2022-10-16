@@ -2,8 +2,15 @@
 <html>
   <head>
     <title>Zomato Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="favicon (1).ico" rel="icon" type="image/icon" />
     <link href="home.css" rel="stylesheet" />
+    <script src="home.js" tupe="text/javascript"></script>
   </head>
   <body>
     <header>
@@ -24,9 +31,24 @@
       <div id="logo">
         <span>K!</span>
       </div>
+      <div id="coupon">
+        <div id="coupon_content1">
+          <h1 class="clogo">Zomato</h1>
+          <p id="coupon_sub_head">Flat Rs.150 OFF On First Food Order</p>
+        </div>
+        <div id="coupon_image">
+          <button id="coupon_close" onclick="closeCoupon()">&times;</button>
+        </div>
+        <div id="coupon_content2">
+          <h1 class="promo">Use Promo Code:</h1>
+          <mark id="promocode">BOH232</mark>
+          <!-- <p id="promocode">Use Promo Code:</p> -->
+          <button class="btn btn-danger" id="cbutton">Avail Now</button>
+        </div>
+      </div>
       <div id="heading">Find Best Place Near You</div>
       <div id="dropdown">
-        <select id="selectcity">
+        <select id="selectcity" onchange="getRest()">
           <option>SELECT CITY</option>
           <option>Delhi</option>
           <option>Mumbai</option>
@@ -49,39 +71,39 @@
       <div class="mainTileContainer">
         <div class="tileContainer">
           <div class="tileComponent1">
-            <a href="../listing/listing.html">
+            <a href="../list/index.html">
               <img src="../images/fish thali.jfif" alt="breakfast"
             /></a>
           </div>
           <div class="tileComponent2">
             <div class="componentHeading">
-              <a href="../listing/listing.html">Breakfast</a>
+              <a href="../list/index.html">Breakfast</a>
             </div>
             <div class="componentSubHeading">Best Deal For BreakFast</div>
           </div>
         </div>
         <div class="tileContainer">
           <div class="tileComponent1">
-            <a href="../listing/listing.html">
+            <a href="../list/index.html">
               <img src="../images/pasta.webp" alt="breakfast"
             /></a>
           </div>
           <div class="tileComponent2">
             <div class="componentHeading">
-              <a href="../listing/listing.html">Breakfast</a>
+              <a href="../list/index.html">Breakfast</a>
             </div>
             <div class="componentSubHeading">Best Deal For BreakFast</div>
           </div>
         </div>
         <div class="tileContainer">
           <div class="tileComponent1">
-            <a href="../listing/listing.html">
+            <a href="../list/index.html">
               <img src="../images/chocolatepastry.jfif" alt="breakfast"
             /></a>
           </div>
           <div class="tileComponent2">
             <div class="componentHeading">
-              <a href="../listing/listing.html">Breakfast</a>
+              <a href="../list/index.html">Breakfast</a>
             </div>
             <div class="componentSubHeading">Best Deal For BreakFast</div>
           </div>
@@ -94,33 +116,33 @@
           </div>
           <div class="tileComponent2">
             <div class="componentHeading">
-              <a href="../listing/listing.html">Breakfast</a>
+              <a href="../list/index.html">Breakfast</a>
             </div>
             <div class="componentSubHeading">Best Deal For BreakFast</div>
           </div>
         </div>
         <div class="tileContainer">
           <div class="tileComponent1">
-            <a href="../listing/listing.html">
+            <a href="../list/index.html">
               <img src="../images/kadaipaneer.webp" alt="breakfast"
             /></a>
           </div>
           <div class="tileComponent2">
             <div class="componentHeading">
-              <a href="../listing/listing.html">Breakfast</a>
+              <a href="../list/index.html">Breakfast</a>
             </div>
             <div class="componentSubHeading">Best Deal For BreakFast</div>
           </div>
         </div>
         <div class="tileContainer">
           <div class="tileComponent1">
-            <a href="../listing/listing.html">
+            <a href="../list/index.html">
               <img src="../images/fruit pie.jfif" alt="breakfast"
             /></a>
           </div>
           <div class="tileComponent2">
             <div class="componentHeading">
-              <a href="../listing/listing.html">Breakfast</a>
+              <a href="../list/index.html">Breakfast</a>
             </div>
             <div class="componentSubHeading">Best Deal For BreakFast</div>
           </div>
